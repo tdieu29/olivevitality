@@ -3,22 +3,24 @@
 <head>
   <meta charset="UTF-8">
   <title>We’ve Moved | For Vitality</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
   <style>
     body {
       font-family: Georgia, serif;
       background: #f7efdd;
       text-align: center;
-      padding: 70px 20px;
+      padding: 80px 20px;
       color: #2F3E2F;
     }
     .logo {
-      max-width: 180px;
-      margin-bottom: 30px;
+      max-width: 220px;
+      margin-bottom: 36px;
     }
     h1 {
       font-size: 40px;
       color: #4F6F52;
-      margin-bottom: 12px;
+      margin-bottom: 14px;
     }
     p {
       font-size: 18px;
@@ -27,12 +29,12 @@
       line-height: 1.6;
     }
     .buttons {
-      margin-top: 35px;
+      margin-top: 40px;
     }
     .button {
       display: inline-block;
       margin: 10px;
-      padding: 14px 32px;
+      padding: 15px 32px;
       background: #4F6F52;
       color: #FFFFFF;
       text-decoration: none;
@@ -49,9 +51,36 @@
       color: #8FAF8A;
     }
     footer {
-      margin-top: 60px;
+      margin-top: 70px;
       font-size: 14px;
       color: #6B7B6B;
+    }
+    
+    /* Mobile tweaks */
+    @media (max-width: 600px) {
+      body {
+        padding: 60px 18px;
+      }
+
+      .logo {
+        max-width: 180px;
+        margin-bottom: 30px;
+      }
+
+      h1 {
+        font-size: 32px;
+      }
+
+      p {
+        font-size: 17px;
+      }
+
+      .button {
+        display: block;
+        width: 100%;
+        max-width: 320px;
+        margin: 12px auto;
+      }
     }
   </style>
 </head>
