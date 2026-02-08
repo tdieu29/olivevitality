@@ -6,16 +6,28 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
   <style>
+    * {
+      box-sizing: border-box;
+    }
+
     body {
+      margin: 0;
       font-family: Georgia, serif;
       background: #f7efdd;
-      text-align: center;
-      padding: 80px 20px;
       color: #2F3E2F;
+      display: flex;
+      justify-content: center;
+    }
+    .container {
+      width: 100%;
+      max-width: 720px;
+      padding: 80px 20px;
+      text-align: center;
     }
     .logo {
       max-width: 220px;
-      margin-bottom: 36px;
+      margin: 0 auto 36 px;
+      display: block;
     }
     h1 {
       font-size: 40px;
@@ -24,7 +36,6 @@
     }
     p {
       font-size: 18px;
-      max-width: 560px;
       margin: 0 auto 18px;
       line-height: 1.6;
     }
@@ -34,7 +45,7 @@
     .button {
       display: inline-block;
       margin: 10px;
-      padding: 15px 32px;
+      padding: 15px 34px;
       background: #4F6F52;
       color: #FFFFFF;
       text-decoration: none;
@@ -58,23 +69,19 @@
     
     /* Mobile tweaks */
     @media (max-width: 600px) {
-      body {
+      .container {
         padding: 60px 18px;
       }
-
       .logo {
         max-width: 180px;
         margin-bottom: 30px;
       }
-
       h1 {
         font-size: 32px;
       }
-
       p {
         font-size: 17px;
       }
-
       .button {
         display: block;
         width: 100%;
@@ -84,25 +91,21 @@
     }
   </style>
 </head>
+  
 <body>
-
-  <img src="logo.png" alt="For Vitality Logo" class="logo">
-
-  <h1>We’ve moved!</h1>
-
-  <p>
-    <span class="accent">Olive Vitality</span> is now <span class="accent"><strong>For Vitality</strong></span>.
-  </p>
-
-  <div class="buttons">
-    <a class="button" href="https://forvitality.co">
-      Visit our new website
-    </a>
+  <div class="container">
+    <img src="logo.png" alt="For Vitality Logo" class="logo">
+    <h1>We’ve moved!</h1>
+    <p>
+      <span class="accent">Olive Vitality</span> is now <span class="accent"><strong>For Vitality</strong></span>.
+    </p>
+    <div class="buttons">
+      <a class="button" href="https://forvitality.co">
+        Visit our new website
+      </a>
+    </div>
+    <footer>© For Vitality</footer>
   </div>
-
-  <footer>
-    © For Vitality
-  </footer>
-
 </body>
+  
 </html>
